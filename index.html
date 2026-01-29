@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Japa Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card" id="card">
+    <h1>🕉️ Japa Counter</h1>
+
+    <div id="signal" class="signal hidden">
+      108 COMPLETE ✨
+    </div>
+
+    <div class="stats">
+      <div>Total Count: <span id="count">0</span></div>
+      <div>Malas Completed: <span id="malas">0</span></div>
+      <div>Current Mala: <span id="current">0</span>/108</div>
+      <div>
+        Daily Goal:
+        <input type="number" id="goal" min="1" />
+        malas
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <div class="controls">
+      <button class="count-btn" onclick="increment()">➕ Count</button>
+      <button class="reset-btn" onclick="resetCounter()">🔄 Reset</button>
+    </div>
+
+    <div class="toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
